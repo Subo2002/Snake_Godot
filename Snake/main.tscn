@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw2tipkrv5xje"]
+
+[ext_resource type="Script" path="res://Main.cs" id="1_gdqbo"]
+[ext_resource type="PackedScene" uid="uid://cwtm33wsfju0v" path="res://head.tscn" id="3_f1pu0"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_gdqbo")
+
+[node name="Head" parent="." instance=ExtResource("3_f1pu0")]
+
+[connection signal="BorderCollision" from="Head" to="." method="_on_head_border_collision"]

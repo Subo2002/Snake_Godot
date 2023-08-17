@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1hnm0s7733x1"]
+
+[ext_resource type="Texture2D" uid="uid://bexf4545usjmc" path="res://Art/Snake_DIrtTile.png" id="1_t33uc"]
+
+[node name="DirtTile" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_t33uc")

@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://c57fu30iqymal"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_rp8fm"]
+script/source = "using Godot;
+using System;
+
+public partial class MovingBlock : Area2D
+{
+	
+	int[] MoveInstructions;
+	
+	// Called when the node enters the scene tree for the first time.
+	public override void _Ready()
+	{
+	}
+
+	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public override void _Process(double delta)
+	{
+		
+	}
+}
+"
+
+[node name="MovingBlock" type="Area2D"]
+script = SubResource("CSharpScript_rp8fm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
